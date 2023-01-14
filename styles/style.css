@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body{
+    text-align: center;
+    background-color: #131922
+}
+
+.my_container{
+    width: 80%;
+    margin: auto;
+    padding: 30px 0;
+}
+
+h1 {
+    text-align: center;
+    padding: 40px;
+    color: #eee;
+}
+
+#img2{
+    border-radius: 50%;
+    width: 180px;
+    object-fit: contain;
+    border: 1px solid black;
+    box-shadow: 0 0 3px 7px #00000033;
+    transition: 0.3s;
+}
+
+#img2:hover{
+    transform: scale(1.25) translateX(-40px);
+    box-shadow: 0 0 3px 7px #7771715e;
+}
+
+h2{
+    color: #eee;
+    padding: 40px;
+}
+
+#email{
+    text-align: center;
+    color: #eee;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
+
+h3{
+    text-align: center;
+    padding: 30px;
+    color: #999;
+}
+
+p{
+    text-align: left;
+    color: #978a8a;
+    transition: 0.3s;
+}
+
+ol{
+    color: #978a8a;
+    text-align: left;
+    padding: 10px 20px 20px;
+    line-height: 25px;
+    transition: 0.3s;
+}
+
+p:hover, ol:hover{
+    color: #eee;
+}
+
+
+#links{
+    text-align: left;
+    width: 80%;
+}
+
+ul{
+    list-style: none;
+    padding: 10px 20px 20px;
+    line-height: 25px;
+}
+
+#links a{
+    color: #eee;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
+
+#links a::after, #email::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+  
+#links a:hover::after, #email:hover::after {
+transform: scaleX(1);
+transform-origin: bottom left;
+}
+
+#links{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#links div {
+display: flex;
+flex-direction: column;
+gap: 40px;
+margin: 40px 0;
+text-align: center;
+}
+
+#links img{
+    width: 200px;
+    height: 200px;
+    opacity: 0.5;
+    transition: all 0.7s;
+}
+
+#links #cw {
+    filter: invert();
+}
+
+#links img:hover{
+    transform: rotate(360deg);
+    opacity: 1;
+}
