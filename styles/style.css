@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    overflow-x: hidden;
 }
 
 body{
@@ -32,7 +33,7 @@ h1 {
 }
 
 #img2:hover{
-    transform: scale(1.25) translateX(-40px);
+    transform: scale(1.25) translateX(-25px);
     box-shadow: 0 0 3px 7px #7771715e;
 }
 
@@ -56,14 +57,16 @@ h3{
 }
 
 p{
-    text-align: left;
+    text-align: justify;
+    text-justify: inter-word;
     color: #978a8a;
     transition: 0.3s;
 }
 
 ol{
     color: #978a8a;
-    text-align: left;
+    text-align: justify;
+    text-justify: inter-word;
     padding: 10px 20px 20px;
     line-height: 25px;
     transition: 0.3s;
@@ -75,7 +78,8 @@ p:hover, ol:hover{
 
 
 #links{
-    text-align: left;
+    text-align: justify;
+    text-justify: inter-word;;
     width: 80%;
 }
 
@@ -115,6 +119,7 @@ transform-origin: bottom left;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 #links div {
